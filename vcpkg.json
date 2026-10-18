@@ -1,0 +1,15 @@
+{
+  "name": "tc-native",
+  "version-string": "3.6",
+  "description": "WEBP и AVIF (чтение и запись) для плагина SketchUp Texture Converter. Автор Antoñŷ",
+  "dependencies": [
+    "libwebp",
+    { "name": "libavif", "default-features": false, "features": ["dav1d", "aom"] }
+  ],
+  "features": {
+    "raw": {
+      "description": "RAW (LibRaw), в 3.6 не используется",
+      "dependencies": ["libraw"]
+    }
+  }
+}
